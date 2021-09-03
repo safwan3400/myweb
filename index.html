@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-<header id="hdr"  style="z-index: 1; width: 100%; position:fixed" class="col-12">
+<header id="hdr" class="col-12"  style="z-index: 1; position:fixed" >
     <div class="row" style="background: #f8f9fa; padding: 2em; padding-left: 3em;">
         <div class="col-md-6">
-            <p><a href="#hdr" class="text-body h1 m-2" style="text-decoration: none; color: inherit;">Mohammed Safwan</a></p>
+            <p><a href="#hdr" class="text-body m-2" style="text-decoration: none; color: inherit; font-size: 2em">Mohammed Safwan</a></p>
 
         </div>
         <div class="col-md-6 ">
@@ -34,7 +34,7 @@
                         <a class="nav-link" href="#skl"><h3>Skills</h3></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#ftr"><h3>Contact me</h3></a>
+                      <a class="nav-link" href="#cnt"><h3>Contact me</h3></a>
                     </li>
                     
                   </ul>
@@ -47,20 +47,22 @@
 
 
 </header>
-<section style="width: 100%;" class="col-12" >
-    <div class="bg-image " style="
+<section  class="">
+    <div class="container-fluid">
+    <div class="bg-image col-12" style="
     background-image: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/619150/3bb00cbe95127f2fe36c85a33cfe69f4e5911234.jpg');
-    height: 75vh; padding-top: 10em; width: 100%">
+    height: 75vh; padding-top: 10em;">
     <div class="row m-5" >
         <div class="col-md-6">
             <img style="width:30%;" src="https://media-exp1.licdn.com/dms/image/C5603AQHvn-zhrAy0pQ/profile-displayphoto-shrink_800_800/0/1603433292833?e=1635984000&v=beta&t=-U8YlVzcuqqsmWAW6NZVPnFxzoCr3PNZ6CSRnI7jdGc" alt="..." class="img-thumbnail">
 
         </div>
+    </div>
     </div></div>
     
 </section>
 
-<section  id="exp" style="padding-top: 8em; width: 100%;" class="col-12">
+<section  class="" id="exp" style="padding-top: 8em;">
     <div class="border-top"></div>
     <h1 class="text-center m-3 mb-4" style="padding-top: 2em;">Experiences...</h1>
     <div class="container-fluid ">
@@ -101,7 +103,7 @@
 
 
 
-<section style="padding-top: 8em; padding-bottom: 8em; width: 100%;" id="skl" class="col-12">
+<section  class="" style="padding-top: 8em; padding-bottom: 8em;" id="skl">
     <div class="border-top"></div>
     <h1 class="text-center m-3 mb-4" style="padding-top: 2em;">Skills...</h1>
     <div class="container-fluid ">
@@ -140,35 +142,63 @@
     </div>
 </section>
 
-<footer style="width: 100%;" class="col-12">
-    <div id="ftr" class="row bg-info mx-auto" style="height: 200px;">
-        <div class="col-4 text-center text-info pt-5" >
-            <div class="col-1.3 ">
-                
-                
+<section class="border-top" id="cnt">
+    <div class="p-5">
+        <h1 class="text-center m-3 mb-4" style="padding-top: 2em;">Contact me...</h1>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-            <div class="col-1.1 text-center text-info pt-4" style="background:#f8f9fa ; height: 9em; width: 20em;">
-                <h6 >Ph: 9995678191</h6>
-                <h6>6238283325</h6>
-                <h6>Malappuram</h6>
-                <h6>676102</h6>
-                
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <div class="col-1.3 ">
-                
-                
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            
-        </div>
-        <div class="col-4" style="padding-left: 50em;" >
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Example select</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2">Example multiple select</label>
+                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            <button type="submit" class="btn btn-primary mt-4 mb-4" style="width: 100%;">Submit</button>
+          </form>
+    </div>
+</section>
+
+<footer  class="">
+    <div id="ftr" class="row bg-info " style="height: 200px;">
+        
+        <div class="mx-auto" >
             <a href="https://www.youtube.com/channel/UCQfzg3t2qTGcezTSfL6qfYw" class="fa fa-youtube" target="_blank"></a>
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-facebook"></a>
-
-        </div>
-        <div class="col-4">
-            
-
 
         </div>
         
@@ -178,7 +208,11 @@
 
         
     </div>
+
+    
 </footer>
+
+
 <style>
     .fa {
   padding: 20px;
